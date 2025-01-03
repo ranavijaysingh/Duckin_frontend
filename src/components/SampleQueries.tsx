@@ -1,5 +1,3 @@
-import { BarChart3, Users, Calendar, DollarSign } from "lucide-react";
-
 interface SampleQueriesProps {
   darkMode: boolean;
   onQuerySelect: (query: string) => void;
@@ -8,20 +6,16 @@ interface SampleQueriesProps {
 export function SampleQueries({ darkMode, onQuerySelect }: SampleQueriesProps) {
   const sampleQueries = [
     {
-      icon: <BarChart3 className="w-4 h-4" />,
-      text: "Show me the top 5 customers by total orders",
+      text: "Show All",
     },
     {
-      icon: <Users className="w-4 h-4" />,
-      text: "Calculate average order value by country",
+      text: "Show Top 15 entries",
     },
     {
-      icon: <Calendar className="w-4 h-4" />,
-      text: "List all orders from the past month",
+      text: "Show entries where Country is New Zealand",
     },
     {
-      icon: <DollarSign className="w-4 h-4" />,
-      text: "Find customers who spent more than $1000",
+      text: "show all where index<92",
     },
   ];
 
@@ -38,7 +32,6 @@ export function SampleQueries({ darkMode, onQuerySelect }: SampleQueriesProps) {
                 : "bg-white hover:bg-gray-100 shadow-sm"
             }`}
         >
-          {sample.icon}
           <span className="text-sm">{sample.text}</span>
         </button>
       ))}

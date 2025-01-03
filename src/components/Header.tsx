@@ -1,4 +1,4 @@
-import { Moon, Sun } from "lucide-react";
+import { Moon, Sun, Squirrel } from "lucide-react";
 
 interface HeaderProps {
   darkMode: boolean;
@@ -8,7 +8,10 @@ interface HeaderProps {
 export function Header({ darkMode, setDarkMode }: HeaderProps) {
   return (
     <div className="flex justify-between items-center mb-8">
-      <h1 className="text-3xl font-bold">DuckDB Query Interface</h1>
+      <h1 className="text-3xl font-bold flex flex-row mx-auto my-0">
+        DuckIn
+        <Squirrel className="w-11 h-11 text-3xl" />
+      </h1>
       <button
         onClick={() => setDarkMode(!darkMode)}
         className={`p-2 rounded-full ${

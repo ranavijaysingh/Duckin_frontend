@@ -39,7 +39,7 @@ export function QueryInput({
       console.log(response);
       setResults(response.data);
       setUploadedFileName(file.name);
-      onQueryChange(""); // Clear any existing query
+      onQueryChange("");
     } catch (err) {
       setError(
         err instanceof Error ? err.message : "Failed to upload CSV file"

@@ -16,9 +16,7 @@ function App() {
       <div className="max-w-4xl mx-auto px-4 py-8">
         <Header darkMode={darkMode} setDarkMode={setDarkMode} />
 
-        <p className="text-gray-500 mb-8">
-          Analyze your data using natural language queries
-        </p>
+        <p className="text-gray-500 mb-8">Natural language queries to SQL</p>
 
         <SampleQueries darkMode={darkMode} onQuerySelect={setQuery} />
 
