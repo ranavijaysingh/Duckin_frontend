@@ -1,6 +1,7 @@
 import { Send, Upload } from "lucide-react";
 import { ChangeEvent, useRef, useState } from "react";
 import { executeQuery, uploadCSV } from "../services/api";
+import Dictaphone from "./Micreact";
 
 interface QueryInputProps {
   darkMode: boolean;
@@ -116,6 +117,8 @@ export function QueryInput({
               {uploadedFileName}
             </span>
           )}
+
+          <Dictaphone onQueryChange={onQueryChange} />
 
           <div className="flex-1" />
 

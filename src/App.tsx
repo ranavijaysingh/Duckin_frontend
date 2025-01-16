@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Header } from "./components/Header";
 import { SampleQueries } from "./components/SampleQueries";
 import { QueryInput } from "./components/QueryInput";
+import "regenerator-runtime/runtime";
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
